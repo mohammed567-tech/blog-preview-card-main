@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../fonts/Figtree-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/Figtree-VariableFont_wght.woff") format("woff"),
+    url("../fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree-Italic";
+  src: url("../fonts/Figtree-Italic-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/Figtree-Italic-VariableFont_wght.woff") format("woff"),
+    url("../fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url("../fonts/static/Figtree-ExtraBold.woff2") format("woff2"),
+    url("../fonts/static/Figtree-ExtraBold.woff") format("woff"),
+    url("../fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Figtree-SemiBold";
+  src: url("../fonts/static/Figtree-SemiBold.woff2") format("woff2"),
+    url("../fonts/static/Figtree-SemiBold.woff") format("woff"),
+    url("../fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+body {
+  background-color: #f4d04e;
+  font-family: "Figtree", sans-serif;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+.card {
+  background-color: #fff;
+  width: 348px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 96%;
+  gap: 12px;
+  /* background-color: aquamarine;  */
+}
+.content-card .badge {
+  background-color: #f4d04e;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+.content-card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #111;
+}
+.content-card .text span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.content-card .text span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+}
+.content-card .text span:nth-child(3) {
+  color: #6b6b6b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.footer-card {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 800;
+}
+.footer-card .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.footer-card .profile img {
+  width: 32px;
+}
+.attribution {
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .card {
+    width: 327px;
+  }
+}
